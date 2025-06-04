@@ -5,14 +5,16 @@ from flask_cors import CORS
 from flask_migrate import Migrate
 from models import db  # importa todos los modelos automáticamente
 from models.inicializar_db import inicializar_db
- 
+from config import Config #para produccion, elimina local
+
 def create_app():
     app = Flask(__name__)
+    app.config.from_object(Config) #para produccion, elimina local
 
-    # Configuración
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:1234@localhost:5432/aulainteligente'
-    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-    app.config['SECRET_KEY'] = 'clave_secreta_aula_inteligente'
+    # Configuración solo usar local
+    # app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:1234@localhost:5432/aulainteligente'
+    # app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    # app.config['SECRET_KEY'] = 'clave_secreta_aula_inteligente'
 
     # Inicializaciones
     db.init_app(app)

@@ -23,7 +23,7 @@ from models.ponderaciones_evaluacion import PonderacionEvaluacion
 from models.materia_grado import MateriaGrado 
 from models.alumno_grado import AlumnoGrado
 from models.materia_profesor import MateriaProfesor
-
+from datetime import datetime
 from models.historial_asistencia_participacion import HistorialAsistenciaParticipacion
 
 from models.nota_trimestre import NotaTrimestre
@@ -36,7 +36,11 @@ from sqlalchemy import text
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:1234@localhost:5432/aulainteligente'
+#local
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:1234@localhost:5432/aulainteligente'
+#produccion
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://aula_inteligente_db_user:UNE4GA8OLDxm19mqVeq0NuV7so2YZrIp@dpg-d10bbrk9c44c73dhvfe0-a.oregon-postgres.render.com/aula_inteligente_db'
+
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)
@@ -56,6 +60,14 @@ def cargar_csv(Modelo, archivo):
                     clean_row[k] = True
                 elif v.lower() == "false":
                     clean_row[k] = False
+
+                elif k.startswith("fecha") and "/" in v:
+                    # Convertir fechas del tipo '25/04/2025' a formato datetime
+                    try:
+                        clean_row[k] = datetime.strptime(v, "%d/%m/%Y").date()
+                    except:
+                        clean_row[k] = None        
+
                 elif v.isdigit():
                     clean_row[k] = int(v)
                 else:
