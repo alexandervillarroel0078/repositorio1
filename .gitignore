@@ -1,3 +1,4 @@
 # Ignorar cachés de Python
 __pycache__/
 *.pyc
+reset_total_y_cargar.py
