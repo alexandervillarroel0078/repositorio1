@@ -1,0 +1,201 @@
+alumno_id,nombre_completo,email,telefono,direccion,fecha_nacimiento,estado,grado,nota
+887,Lisa Wilson,brooksdonald@example.org,603.493.5511x0536,"0090 Stewart Prairie
+Danielport, MT 18500",1917-04-16,inactivo,6,1
+590,Ruben Sanford,david08@example.com,552.359.7082x39588,"242 Linda Forks Suite 255
+Pinedamouth, KS 56477",1930-06-19,activo,5,4
+870,Paul Dillon,jesusbeasley@example.net,404-635-2450,"570 Beth Spring Apt. 281
+Lake Jeremy, PW 22785",1943-01-03,inactivo,6,2
+974,Andrew Hernandez,rpearson@example.net,+1-427-300-0912x25204,"5546 Reyes Stream
+Howestad, NJ 08275",1951-06-20,activo,6,7
+602,Anthony Collier,hsalinas@example.net,001-626-996-3902x598,"4304 Jackson Inlet
+West Nicholas, AZ 40138",1995-02-15,activo,6,9
+558,Andrew Harrison,kramermary@example.org,7362803364,"390 Danielle Manor
+Lake Troy, SC 47635",1976-10-01,inactivo,1,9
+866,Henry Martin,krista62@example.org,001-774-934-2841x627,"498 Ward Mill Suite 422
+New Regina, AL 67041",1997-01-01,inactivo,4,8
+672,Ronald Patterson,christopher80@example.com,(212)627-6507,"USNS Arias
+FPO AP 35859",1967-05-12,inactivo,1,10
+362,Scott Davis,sharpjames@example.com,001-982-375-5276x565,"178 John Path Suite 489
+Rossside, VI 95056",1934-03-09,activo,5,5
+594,Tiffany Oconnell,cnichols@example.net,001-823-562-1669x5051,"PSC 9535, Box 5522
+APO AP 49884",2017-07-08,activo,5,8
+385,Sarah Chavez,gmartinez@example.net,332-344-0551x2916,"7742 Carter Brook Suite 606
+Dicksonchester, PA 02571",1997-07-30,inactivo,2,1
+360,Mr. Michael Carter,austinbrian@example.net,2504439534,"694 Freeman Stravenue
+North Lisa, KS 40522",2007-08-08,activo,4,8
+617,James Nguyen,nbrown@example.org,719-207-7842x3730,"86156 Brandon Road
+Grantshire, MD 84128",1992-07-13,inactivo,1,6
+109,Laura Rivers,richardnorton@example.com,+1-514-481-6541x559,"23449 Alexis Ranch Suite 998
+East Sydney, CT 76048",1955-07-01,inactivo,1,7
+331,Derek Mueller,matthewbrown@example.net,850-701-5167x01053,"30606 Cunningham Spurs Apt. 771
+Warnerville, AL 16598",1924-05-28,activo,6,5
+450,Betty Gregory,ambergriffin@example.org,(947)997-1982x77334,"2822 Brooke Row
+Caseshire, VI 78123",2004-07-15,inactivo,1,10
+607,Tracy Mora,grantjohn@example.com,236.864.8383x1519,"PSC 2325, Box 6491
+APO AE 86184",1957-10-16,inactivo,6,6
+738,Todd Cole,ejennings@example.com,+1-958-377-6184,"USNS Short
+FPO AE 91407",1929-09-23,activo,5,1
+36,Dennis Simmons,kylebenjamin@example.org,724-454-4507x43289,"5745 Katherine Forks
+Collinsstad, SD 60582",1959-11-12,activo,3,9
+117,Jessica Frank,smithcarlos@example.net,(798)505-5011,"34745 Joseph Lane
+Piercemouth, KS 50166",1963-04-10,inactivo,2,4
+268,Steven Hall,bmurphy@example.org,401.750.9601,"655 Mccoy Lakes Suite 991
+Lake Kara, MS 84156",2020-02-14,inactivo,5,6
+723,Stephanie Walker,krose@example.org,001-664-525-0022,"Unit 1259 Box 7410
+DPO AE 19456",1910-12-14,inactivo,5,6
+510,Chad Cardenas,franklinselena@example.org,5673466246,"4848 Austin Wells Apt. 490
+Kaneton, TX 67259",1987-07-10,inactivo,1,6
+758,Jeremy Hicks,butlerkristina@example.net,(255)992-1405,"085 Michael Throughway
+Powellland, VT 31288",1990-08-18,activo,3,3
+634,Yvonne Fitzgerald,flong@example.com,(504)298-5198x170,"57552 James Union Apt. 904
+Lake Brucechester, MI 13701",1972-03-30,inactivo,6,9
+414,Margaret Johnson,sandra81@example.org,(488)744-1574,"4368 Henson Pines
+Allisonton, MD 36670",2007-10-12,activo,6,10
+872,Patricia Juarez,djohnson@example.net,001-401-313-8825x248,"931 Henson Court
+Kathrynbury, FM 30383",1952-04-22,inactivo,4,4
+880,Kristin Acevedo,marie68@example.com,(294)225-7648,"740 Hannah Centers Suite 029
+Barronborough, MP 31219",1989-05-30,inactivo,6,6
+572,Brian Daniels,mcmillanrobert@example.org,(270)482-9131,"91956 Thomas Gardens
+Amyton, PA 78090",1945-06-20,inactivo,6,2
+626,Ashley Banks,darlene86@example.net,+1-966-966-9004x67482,"PSC 1699, Box 8246
+APO AP 69963",1982-04-27,activo,6,9
+292,Rebecca Foster,patriciapark@example.net,+1-795-854-7385x9665,"576 Jesse Mountains Suite 431
+Lopezburgh, NE 23543",1999-11-21,inactivo,1,10
+192,Traci Gillespie,darrell08@example.org,787.791.1082x664,"01312 Gerald Summit
+West Michelle, UT 66570",1975-11-24,activo,5,1
+164,Edward Garcia,suttonaaron@example.net,(536)901-9704x29753,"9127 Jennifer Camp
+Clarkeshire, NE 27801",1944-04-08,inactivo,5,10
+15,Leslie Johnson,mary33@example.org,707.876.8162,"106 Callahan Road
+Wesleymouth, DE 86488",1920-10-08,inactivo,4,4
+821,Heidi Williams,juliebrooks@example.net,(918)763-4238,"6485 Brenda Greens Suite 007
+Lake Diana, CO 25961",2007-09-01,activo,3,3
+716,Kara Figueroa,jonesjoshua@example.org,001-488-332-2247x631,"USS English
+FPO AP 00945",2011-07-30,activo,3,5
+236,Melissa Woodard,royjefferson@example.com,790.935.1337,"990 Hawkins Mountain
+North Jeffreyburgh, MS 40677",2003-11-30,inactivo,3,8
+592,Jennifer Smith,tim33@example.net,001-685-844-0712x8664,"0819 Myers Trail Suite 134
+South Manuelburgh, SC 10748",1991-04-04,inactivo,5,5
+845,Natalie Woods,zgarcia@example.net,363.541.4796,"8368 Weiss Trail Suite 413
+Rachelhaven, SC 12817",1996-03-15,inactivo,3,10
+221,Elizabeth Jackson,fdavis@example.net,(682)313-7498,"53985 Rose Course
+Mitchellland, SD 74367",2012-10-31,activo,4,7
+664,Timothy Smith,letodd@example.org,474.504.5403x0249,"2583 Jenkins Plaza
+Sheilastad, KS 14845",2008-12-20,inactivo,2,4
+504,Michelle Wall,twalton@example.com,001-313-565-1066x272,"501 Patrick Ranch Apt. 440
+Johnsonside, CA 92788",1994-10-16,inactivo,4,1
+99,Rebecca Hall,justin40@example.org,923.968.0985x6451,"4409 Weeks Way
+East Stevenstad, AK 28326",1934-12-17,inactivo,6,8
+605,Cynthia Dean,dwagner@example.net,001-532-477-3542,"377 Marshall Groves Suite 771
+West Dannymouth, MP 23830",1988-06-03,inactivo,1,10
+219,Kathy Shaffer,williamssarah@example.net,439.374.8124x291,"0544 Lisa Hill
+Hillmouth, VT 43079",1921-02-02,inactivo,2,1
+967,Carol Parker,anthony02@example.org,(411)929-3903x52226,"024 Fisher Cove Apt. 116
+East Robertside, CA 40310",1979-10-14,activo,6,7
+499,Sarah Mullins,nancy69@example.net,965.228.8010,"0935 David Rapids Apt. 616
+Davidtown, FM 78706",2024-04-25,activo,2,3
+620,Wendy Stone,bramirez@example.com,473-411-3859,"27785 David Shore Apt. 966
+Hermanborough, KY 95277",1962-02-18,activo,2,2
+38,Brianna Woodward,crystal69@example.com,972-548-6927,"22276 Sullivan Extension Suite 777
+South Michaelborough, SC 15568",1920-07-03,inactivo,3,7
+682,Ricky Hill,wendy98@example.com,(350)749-7913x60654,"USNV Chung
+FPO AA 77202",1955-05-17,inactivo,1,5
+310,Reginald Taylor,laura46@example.org,(256)861-3790,"472 Lynn Flat Suite 554
+Angelastad, MH 22216",1990-07-15,inactivo,3,9
+748,Nicholas Hunter,jonesmelissa@example.net,001-610-506-5313x899,"556 Dillon Crescent
+Port Samantha, NM 15395",2017-10-25,activo,1,8
+540,Ann Collins,nicole09@example.com,+1-547-426-9391x257,"147 Saunders Gateway
+Bonillamouth, DE 98362",1921-03-29,inactivo,1,4
+483,Joseph Ball,nfletcher@example.net,001-346-455-4087x898,"986 Daniel Station
+Castilloshire, DE 85182",1996-03-08,activo,6,10
+890,Dustin Long,ericwilliams@example.net,(781)480-5244x93580,"50244 Brian Fort
+Annetteshire, MS 63847",1997-05-09,activo,4,9
+158,Karen Herrera,karen90@example.org,572-618-6097x6181,"Unit 1636 Box 9363
+DPO AP 46303",1991-06-29,activo,5,9
+686,David Mora,hjefferson@example.net,476-519-3278x67714,"552 Shannon Radial Suite 646
+New Joanna, AK 14790",1988-05-22,inactivo,5,5
+760,Debbie Stein,marshallluke@example.net,+1-754-589-1504,"647 Warner Dale Suite 277
+New Jennifer, AZ 06542",1920-07-26,activo,6,1
+474,James Foley,brandy70@example.net,+1-515-746-4365x6330,"4760 Willie Mountain Apt. 890
+Shawton, AS 66966",1927-02-07,inactivo,3,3
+79,Robert Gilmore,tcox@example.com,441-913-4937x0394,"234 Tina Shores Apt. 868
+Tracyport, PR 12136",1961-04-26,activo,6,4
+113,Terry Johnson,garciachristopher@example.net,7815707155,"718 Carl Club
+Port Fernando, MO 08396",1987-01-06,inactivo,4,5
+792,William Williams,lauraingram@example.org,(526)852-2301,"464 Perez Locks Suite 917
+Pottermouth, VT 43268",1912-09-29,inactivo,4,8
+138,Richard Little,johnbaker@example.org,+1-239-278-0041x97797,"0047 Joshua Summit Suite 449
+Gibsonchester, ID 56553",1927-12-13,activo,1,8
+663,Kevin Gomez,veronica47@example.net,718-705-7895x06038,"589 Kimberly Spurs Suite 189
+New Robert, OR 85388",1994-10-15,activo,5,6
+916,Julia Hall,john06@example.org,870.809.3747x98741,"39304 Smith Neck Suite 055
+North Brittany, CT 43928",1971-11-04,inactivo,4,10
+31,Garrett Sandoval,brownkelly@example.org,001-871-310-9649x646,"Unit 5728 Box 5130
+DPO AE 03390",2004-06-12,activo,4,4
+171,Alexis Cox,fsimmons@example.net,626-670-8112x057,"989 Cole Rapids
+Abbottton, FL 31107",2007-03-18,activo,1,7
+167,Kimberly Morris,jenniferbutler@example.net,913-461-3327x0054,"3637 James Forks Suite 208
+Port Shannon, IL 52228",2024-09-20,activo,5,7
+449,Sherri Armstrong,eoneill@example.com,964.979.4887x137,"4072 Wilson Crossing
+Katherinefurt, WV 76429",2024-05-30,inactivo,4,8
+977,Michael Alvarez,wileyguy@example.net,(525)368-1130x633,"079 Patrick Junction
+East Christopher, AZ 36777",1945-09-28,activo,1,7
+777,Alyssa Washington,smithpeggy@example.org,744.868.3717,"PSC 8232, Box 5884
+APO AE 04864",1947-11-03,activo,4,10
+406,Gregory Marsh,millerann@example.com,(540)827-7669x488,"326 Cathy Garden
+Pottertown, VA 24974",2004-07-09,activo,3,2
+825,Gregory Williams,pamela21@example.net,(870)574-3873,"7723 Jamie Canyon Apt. 866
+Debbieton, WA 08752",1990-01-13,inactivo,5,3
+71,Stephanie Patton,aliciaolsen@example.org,+1-219-899-6985x1426,"3949 Courtney Station Apt. 288
+North Brianmouth, NV 93966",1948-05-18,inactivo,1,9
+218,Patricia Cruz,ucisneros@example.com,460.870.0211x96736,"21335 Donald Manors Suite 846
+Karenview, AK 99319",1921-08-12,activo,3,8
+535,Juan Newton,christine80@example.com,949.855.1773x43860,"17335 Allen Turnpike
+Dustinville, MO 18437",1963-08-24,activo,5,5
+979,Nicole Smith,smithangel@example.org,313-946-6349x41500,"6958 Wagner Ports Suite 674
+Velezshire, MI 12839",2001-12-02,inactivo,3,6
+478,Lisa Bruce,gilbert76@example.com,+1-778-931-1733x80913,"48260 Benjamin Stravenue
+Snowton, MI 79374",2013-08-17,activo,3,1
+985,Brandy Macias,christensenalicia@example.net,+1-962-433-4468x79091,"Unit 0624 Box 3454
+DPO AE 13137",1937-10-14,activo,2,2
+157,Patricia Mccarty,aaronwebb@example.org,+1-453-651-7643x01597,"0901 Huerta Lodge Apt. 778
+West Brandonside, NJ 55791",1964-06-25,activo,4,1
+25,Daniel Rodriguez,kevin55@example.com,343-896-0361x3708,"2174 Travis Key Suite 487
+Wuview, LA 88542",1987-10-03,activo,5,5
+216,Troy Johnson,philip12@example.net,(263)629-4630x4357,"604 Michelle Burg
+Port Debbie, MA 47797",1979-05-11,inactivo,4,9
+251,Johnny Sanchez,mark37@example.net,525-407-8685,"Unit 4424 Box 8537
+DPO AA 94940",2016-07-31,activo,2,6
+857,Brooke Andrews,grichardson@example.net,955-588-3661x6607,"67142 Janet Square Apt. 684
+Lake Cassandraburgh, PR 61894",2003-05-03,inactivo,4,2
+223,Kenneth Johnson,snyderrhonda@example.net,+1-950-871-1026,"PSC 9590, Box 7692
+APO AE 86376",1914-03-07,inactivo,1,9
+5,James Collier,turneramanda@example.net,2855639156,"05208 Chris Streets Suite 674
+Sonyatown, HI 60835",1911-06-19,inactivo,5,5
+895,Gordon Charles PhD,clarkerichard@example.com,950-495-2652x144,"08432 Stacey Courts Apt. 098
+New Heatherstad, PA 36161",1930-01-18,inactivo,6,4
+850,Javier Hernandez,vegabrandy@example.org,(257)742-6991x261,"42002 Rodriguez Corners Suite 573
+Donovanstad, WA 90466",1966-08-13,inactivo,6,5
+374,Joseph Sims,dtran@example.com,+1-956-442-2792,"4916 Lindsey Mount Apt. 188
+Williamsshire, CA 82830",2015-11-09,inactivo,3,10
+940,Stephanie Wilson,frankjohn@example.org,001-648-707-0078x9839,"5886 Brown Lodge Apt. 866
+East Derrick, OK 03834",2017-12-28,activo,4,3
+867,Brian Jones,marroyo@example.org,7355814670,"6886 Daniel Spurs Apt. 438
+Lake Jamesport, PA 81409",1996-09-02,activo,4,9
+43,Haley Hall,shannon65@example.org,6248914570,"4212 Owens Forge Suite 870
+Port Annamouth, TN 24996",1986-10-19,activo,5,5
+563,Andre Smith,pittstara@example.com,5499903573,"Unit 3285 Box 5186
+DPO AP 69367",1996-10-15,inactivo,4,2
+163,Rick Bernard,elarson@example.org,609.498.2654x047,"2854 Nelson Circle Suite 132
+East Gregorychester, DE 34054",1958-04-28,activo,5,6
+705,Raymond Howell,jenniferbaker@example.com,(369)847-9410,"02691 Gregory Tunnel Apt. 066
+New Beckyland, MO 66071",1924-11-08,inactivo,2,9
+418,Drew Davidson,james45@example.org,821.918.7633,"001 Johnson Ports Suite 324
+Port George, SD 59127",1967-11-21,inactivo,6,2
+500,Sandra Rivera,xyang@example.com,(280)674-2627x782,"409 Paul Stravenue
+Bennettbury, WY 48744",2010-11-08,inactivo,3,10
+790,Mrs. Vanessa Jackson,lancewood@example.net,615.623.2786,"PSC 1857, Box 1114
+APO AE 31943",1946-12-19,inactivo,6,6
+30,Ronald Wilson,courtney88@example.com,566-795-4217,"861 Henry Fall Suite 776
+Lake Adamchester, IA 90050",1910-08-14,activo,3,1
+152,Timothy Thompson Jr.,jennifer76@example.com,4208715008,"Unit 2775 Box 9264
+DPO AP 72721",1910-08-06,activo,5,6

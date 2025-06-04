@@ -1,0 +1,4 @@
+nombre,descripcion
+Administrador,Acceso total al sistema
+Profesor,Acceso a materias y alumnos asignados
+Alumno,Acceso a sus propias notas y tareas

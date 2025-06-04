@@ -1,0 +1,13 @@
+id,nombre,gestion_id,fecha_inicio,fecha_fin
+1,1er Trimestre,1,,
+2,2do Trimestre,1,,
+3,3er Trimestre,1,,
+4,1er Trimestre,2,,
+5,2do Trimestre,2,,
+6,3er Trimestre,2,,
+7,1er Trimestre,3,,
+8,2do Trimestre,3,,
+9,3er Trimestre,3,,
+10,1er Trimestre,4,03/02/2025,25/04/2025
+11,2do Trimestre,4,05/05/2025,25/07/2025
+12,3er Trimestre,4,04/08/2025,31/10/2025

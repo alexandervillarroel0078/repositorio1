@@ -1,0 +1,22 @@
+run.py → Llama a create_app()
+
+app/__init__.py → Crea la app, carga config, conecta DB, registra rutas
+
+models/ → Define las tablas de la base de datos usando SQLAlchemy (ORM).
+
+routes/ → Define los endpoints de la API (GET, POST, etc.).
+
+controllers/ (opcional) → Contiene la lógica intermedia: procesa datos, llama a los modelos, aplica reglas, etc.
+
+services/ → Aquí van funciones más avanzadas, reutilizables, o externas:
+
+            Autenticación (JWT)
+
+            Integración con IA (predicción)
+
+            Lógica compartida entre controladores
+
+schemas/ → Define la validación de entrada y serialización de salida con Marshmallow.
+
+tests/ → Asegura calidad y evita errores en producción
+

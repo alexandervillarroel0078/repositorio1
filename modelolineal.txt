@@ -1,0 +1,119 @@
+# PASO 1: Librerías necesarias
+import pandas as pd
+import numpy as np
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error, r2_score
+import joblib
+import matplotlib.pyplot as plt
+import zipfile
+
+# PASO 2: Cargar archivo CSV (exportado desde Excel)
+df = pd.read_csv('nota_trimestre_simulado (4) - Sheet1.csv')
+
+# PASO 3: Renombrar columnas
+df = df.rename(columns={
+    'asistencia_trimestre': 'asistencia',
+    'participacion_trimestre': 'participacion',
+    'nota_parcial': 'nota'
+})
+
+# PASO 4: Ordenar por alumno, materia y periodo
+df = df.sort_values(by=['alumno_id', 'materia_id', 'periodo_id'])
+
+# PASO 5: Construir dataset futuro (X → nota del siguiente periodo)
+filas = []
+for i in range(len(df) - 1):
+    actual = df.iloc[i]
+    siguiente = df.iloc[i + 1]
+    if (
+        actual['alumno_id'] == siguiente['alumno_id'] and
+        actual['materia_id'] == siguiente['materia_id'] and
+        siguiente['periodo_id'] == actual['periodo_id'] + 1
+    ):
+        filas.append({
+            'nota': actual['nota'],
+            'asistencia': actual['asistencia'],
+            'participacion': actual['participacion'],
+            'nota_futura': siguiente['nota']
+        })
+
+dataset = pd.DataFrame(filas)
+
+# PASO 6: Separar X (entrada) y y (salida)
+X = dataset[['nota', 'asistencia', 'participacion']]
+y = dataset['nota_futura']
+
+# PASO 7: División en entrenamiento y prueba
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
+
+# PASO 8: Entrenamiento del modelo
+modelo = LinearRegression()
+modelo.fit(X_train, y_train)
+
+# PASO 9: Evaluación del modelo
+y_pred = modelo.predict(X_test)
+print("📊 MSE:", round(mean_squared_error(y_test, y_pred), 2))
+print("📈 R²:", round(r2_score(y_test, y_pred), 2))
+print("📌 Coeficientes:", modelo.coef_)
+print("📌 Intercepto:", modelo.intercept_)
+
+# PASO 10: Gráfico real vs predicho
+plt.figure(figsize=(8, 6))
+plt.scatter(y_test, y_pred, alpha=0.6, color='blue')
+plt.plot([y.min(), y.max()], [y.min(), y.max()], 'r--')  # Línea de referencia
+plt.xlabel("Nota futura real")
+plt.ylabel("Nota futura predicha")
+plt.title("📈 Predicción Regresión Lineal")
+plt.grid(True)
+plt.tight_layout()
+plt.savefig("grafico_lineal_real_vs_predicho.png")
+plt.show()
+
+# PASO 11: Guardar el modelo entrenado
+joblib.dump(modelo, 'modelo_lineal.pkl')
+print("✅ Modelo Lineal guardado como modelo_lineal.pkl")
+
+# PASO 12: Clasificación de rendimiento
+def clasificar_rendimiento(valor):
+    if valor < 60:
+        return "Bajo"
+    elif valor < 80:
+        return "Medio"
+    else:
+        return "Alto"
+
+# PASO 13: Prueba manual
+nuevo = pd.DataFrame([[80, 85, 90]], columns=['nota', 'asistencia', 'participacion'])
+pred = modelo.predict(nuevo)[0]
+print(f"\n🔮 Predicción futura: {pred:.2f}")
+print("📌 Clasificación:", clasificar_rendimiento(pred))
+
+# PASO 14: Guardar comparación real vs predicho
+comparacion = pd.DataFrame({
+    'real': y_test,
+    'predicho': y_pred
+})
+comparacion.to_csv('comparacion_lineal_real_vs_predicho.csv', index=False)
+
+# PASO 15: Resumen general
+print("\n📊 RESUMEN")
+print("👥 Total de pares válidos:", len(dataset))
+print("🧮 Promedio de nota actual:", round(dataset['nota'].mean(), 2))
+print("🧮 Promedio de nota futura:", round(dataset['nota_futura'].mean(), 2))
+
+
+# Crear un archivo ZIP
+with zipfile.ZipFile('resultados_modelo.zip', 'w') as zipf:
+    # Agregar el modelo
+    zipf.write('modelo_lineal.pkl')
+    # Agregar el gráfico
+    zipf.write('grafico_lineal_real_vs_predicho.png')
+    # Agregar el archivo de comparación
+    zipf.write('comparacion_lineal_real_vs_predicho.csv')
+
+# Descargar el archivo .zip
+from google.colab import files
+files.download('resultados_modelo.zip')

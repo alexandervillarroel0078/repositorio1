@@ -1,0 +1,27 @@
+gestion.csv
+
+grado.csv
+
+periodo.csv
+
+alumno.csv
+
+materia.csv
+
+profesor.csv
+
+alumno_grado.csv
+
+materia_grado.csv
+
+materia_profesor.csv
+
+nota_bimestre.csv (con asistencia y participación ya calculadas)
+
+prediccion.csv
+
+Cuando estés listo, dime con cuál deseas empezar y si quieres que te dé:
+
+solo los datos simulados (listos para Excel),
+
+o un CSV completo con encabezados y contenido.

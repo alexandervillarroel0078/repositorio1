@@ -1,0 +1,53 @@
+import pandas as pd
+import numpy as np
+from google.colab import files
+
+# Semilla para reproducibilidad
+np.random.seed(42)
+
+# Definir estructura
+alumnos = range(1, 101)           # 100 alumnos
+grados = [1, 6, 11]              # 3 grados
+materias_por_grado = 4           # 4 materias por grado
+periodos_por_grado = 3           # 3 periodos por grado
+
+filas = []
+
+for alumno_id in alumnos:
+    for grado_id in grados:
+        for materia_id in range(1, materias_por_grado + 1):
+            nota_anterior = np.random.uniform(50, 80)  # Nota inicial entre 50 y 80
+            for i, periodo_id in enumerate(range(1, periodos_por_grado + 1)):
+                # Para que periodo_id sea único por grado, lo escalamos:
+                periodo_global = periodo_id + (grados.index(grado_id) * periodos_por_grado)
+
+                asistencia = np.clip(nota_anterior + np.random.normal(0, 2), 40, 100)
+                participacion = np.clip(asistencia + np.random.normal(0, 2), 30, 100)
+                nota_parcial = np.clip(
+                    0.6 * nota_anterior + 0.2 * asistencia + 0.2 * participacion + np.random.normal(0, 3),
+                    30, 100
+                )
+
+                # Calculamos la nota predictoria para entrenamiento
+                nota_predictoria = 0.6 * nota_parcial + 0.2 * asistencia + 0.2 * participacion
+
+                filas.append({
+                    'alumno_id': alumno_id,
+                    'materia_id': materia_id,
+                    'grado_id': grado_id,
+                    'periodo_id': periodo_global,
+                    'nota_parcial': round(nota_parcial, 2),
+                    'asistencia_trimestre': round(asistencia, 2),
+                    'participacion_trimestre': round(participacion, 2),
+                    'nota_predictoria': round(nota_predictoria, 2)  # Nota predictoria agregada
+                })
+
+                nota_anterior = nota_parcial
+
+df_simulado = pd.DataFrame(filas)
+
+# Guardar como Excel
+df_simulado.to_excel("nota_trimestre_simulado.xlsx", index=False)
+
+print("✅ Archivo generado correctamente: nota_trimestre_simulado.xlsx")
+files.download('nota_trimestre_simulado.xlsx')
