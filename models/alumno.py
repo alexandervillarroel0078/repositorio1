@@ -7,7 +7,7 @@ class Alumno(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     nombre = db.Column(db.String(100), nullable=False)     # Requiere validación de texto
     apellido = db.Column(db.String(100), nullable=False)   # Requiere validación de texto
-    carnet = db.Column(db.String(20), unique=True, nullable=False)
+    carnet = db.Column(db.String(20), unique=True, nullable=True)
 
     # Validaciones adicionales opcionales
     @validates('nombre', 'apellido')
