@@ -31,6 +31,7 @@ def crear_alumno():
         data = request.get_json()
         nombre = data.get('nombre')
         apellido = data.get('apellido')
+        carnet = data.get('carnet')
 
         if not nombre or not apellido:
             return jsonify({'error': 'Nombre y apellido son obligatorios'}), 400
@@ -44,7 +45,8 @@ def crear_alumno():
             'alumno': {
                 'id': nuevo_alumno.id,
                 'nombre': nuevo_alumno.nombre,
-                'apellido': nuevo_alumno.apellido
+                'apellido': nuevo_alumno.apellido,
+                'carnet': nuevo_alumno.carnet
             }
         }), 201
 
