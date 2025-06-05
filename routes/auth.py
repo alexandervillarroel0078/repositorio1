@@ -20,7 +20,8 @@ def login():
 
     try:
         usuario = db.session.query(Usuario).join(Rol).filter(Usuario.correo == correo).add_columns(
-            Usuario.id, Usuario.nombre_usuario, Usuario.password_hash, Usuario.correo, Rol.nombre.label('rol_nombre')
+            Usuario.id, Usuario.nombre_usuario, Usuario.password_hash, Usuario.correo, 
+            Usuario.alumno_id,Rol.nombre.label('rol_nombre')
         ).first()
 
         if usuario and check_password_hash(usuario.password_hash, password):
@@ -39,7 +40,8 @@ def login():
                     'id': usuario.id,
                     'nombre_usuario': usuario.nombre_usuario,
                     'correo': usuario.correo,
-                    'rol': usuario.rol_nombre
+                    'rol': usuario.rol_nombre,
+                    'alumno_id': usuario.alumno_id
                 }
             }), 200
         else:
